@@ -8,7 +8,7 @@ use Config;
 $SIG{'PIPE'} = 'IGNORE';    #Ignore broken pipe errors
 
 print <<EOTEXT;
-Welcome to Slowloris - the low bandwidth, yet greedy and poisonous HTTP client by Laera Loris
+Welcome to MoussaVairosXDz - the low bandwidth, yet greedy and poisonous HTTP client by Laera Loris
 EOTEXT
 
 my ( $host, $port, $sendhost, $shost, $test, $version, $timeout, $connections );
@@ -68,7 +68,7 @@ if ( $Config{usethreads} ) {
 }
 else {
     print "No multithreading capabilites found!\n";
-    print "Slowloris will be slower than normal as a result.\n";
+    print "DosAttack will be slower than normal as a result.\n";
 }
 
 my $packetcount : shared     = 0;
@@ -173,7 +173,7 @@ if ($test) {
     }
 
     if ( print $sock "Connection: Close\r\n\r\n" ) {
-        print "Okay that's enough time. Slowloris closed the socket.\n";
+        print "Okay that's enough time. DosAttack closed the socket.\n";
         print "Use $delay seconds for -timeout.\n";
         exit;
     }
@@ -186,7 +186,7 @@ if ($test) {
         print <<EOSUCKS2BU;
 Since the timeout ended up being so small ($delay seconds) and it generally 
 takes between 200-500 threads for most servers and assuming any latency at 
-all...  you might have trouble using Slowloris against this target.  You can 
+all...  you might have trouble using DosAttack against this target.  You can 
 tweak the -timeout flag down to less than 10 seconds but it still may not 
 build the sockets in time.
 EOSUCKS2BU
@@ -335,13 +335,13 @@ sub domultithreading {
 
 __END__
 =head1 TITLE
-Slowloris by llaera
+DosAttack by Moussa
 =head1 VERSION
 Version 1.0 Stable
 =head1 DATE
-02/11/2013
+02/3/2020
 =head1 AUTHOR
-Laera Loris llaera@outlook.com
+MoussaUnix
 =head1 ABSTRACT
 Slowloris both helps identify the timeout windows of a HTTP server or Proxy server, can bypass httpready protection and ultimately performs a fairly low bandwidth denial of service.  It has the added benefit of allowing the server to come back at any time (once the program is killed), and not spamming the logs excessively.  It also keeps the load nice and low on the target server, so other vital processes don't die unexpectedly, or cause alarm to anyone who is logged into the server for other reasons.
 =head1 AFFECTS
